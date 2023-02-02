@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --bg-color: #EFF1FF;
+  --header-color: #8E9AAF;
+  --header-barra: #CBC0D3;
+  --texto-principal: #FFFFFF;
+  --texto-secundario: #23053A;
+  --span-color: #FEEAFA;
+  --span-color-texto: #4A4E69;
+  --text-color-sombra: rgba(0, 0, 0, 0.25);
+
+ 
+
+  --font-principal: 'Staatliches', cursive;
+  --font-secundaria: 'Palanquin', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  
+}
+
+header {
+  height: 279px;
+  background-color: var(--header-color);
+  text-align: center;
+  padding-top: 32px;
+}
+
+header img {
+  padding-bottom: 32px;
+}
+
+h1 {
+  font-family: var(--font-principal);
+  color: var(--texto-principal);
+  text-shadow: 0px 2px 2px var(--text-color-sombra);
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 34px;
+
+  display: flex;
+ 
+}
+
+h1 span {
+  background-color: var(--header-barra);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  width: 384px;
+}
+
+.page {
+  width: 384px;
+  margin: 0 auto;
+}
+
+main  {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 63px;
+padding-bottom: 60px;
+}
+
+.card {
+  position: relative;
+  max-width: 320px;
+  
+}
+
+.card-imagem {
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+
+  color: var(--span-color-texto);
+}
+
+.card span {
+  position: absolute;
+  border-radius: 20px;
+  background-color: var(--span-color);
+  width: 112px;
+height: 35px;
+}
+
+h1 span {
+  top: 16px;
+  left: 192px;
+}
+
+p {
+  display: flex;
+  text-align: center;
+
+  height: 75px;
+  padding-top: 5px;
+
+  margin: 12px 15px;
+}
+
