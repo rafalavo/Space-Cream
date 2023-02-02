@@ -85,13 +85,14 @@ padding-bottom: 60px;
   border-radius: 20px;
 
   margin-bottom: 10px;
+
+  animation: sobe 700ms;
 }
 
 .card h1 {
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0.05em;
-
   color: var(--span-color-texto);
 }
 
@@ -100,12 +101,13 @@ padding-bottom: 60px;
   border-radius: 20px;
   background-color: var(--span-color);
   width: 112px;
-height: 35px;
+  height: 35px;
+  animation: desce 700ms;
 }
 
 h1 span {
   top: 16px;
-  left: 192px;
+  left: 192px;  
 }
 
 p {
@@ -116,5 +118,29 @@ p {
   padding-top: 5px;
 
   margin: 12px 15px;
+}
+
+@keyframes desce {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sobe {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
